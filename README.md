@@ -35,7 +35,7 @@ DayWise is an AI-powered lifestyle dashboard built with Streamlit. It combines l
 ## 📂 Project Structure
 
 ```
-LifePlus/
+DayWise/
 │
 ├── assets/
 ├── components/
@@ -57,13 +57,13 @@ LifePlus/
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/LifePlus.git
+git clone https://github.com/YOUR_USERNAME/DayWise.git
 ```
 
 Move into the project folder
 
 ```bash
-cd LifePlus
+cd DayWise
 ```
 
 Create a virtual environment
