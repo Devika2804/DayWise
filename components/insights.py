@@ -57,6 +57,44 @@ def render_insights(city_name):
     weather_df = get_weather_history(city_name, days)
     aqi_df = get_aqi_history(city_name, days)
 
+    st.subheader("📅 Weekly Highlights")
+    h1, h2, h3, h4 = st.columns(4)
+    
+    hottest = weather_df.loc[weather_df["temperature"].idxmax()]
+    coolest = weather_df.loc[weather_df["temperature"].idxmin()]
+
+    best_aqi = aqi_df.loc[aqi_df["aqi"].idxmin()]
+    worst_aqi = aqi_df.loc[aqi_df["aqi"].idxmax()]
+
+    if not weather_df.empty and not aqi_df.empty:
+          with h1:
+             st.metric(
+               "🔥 Hottest Day",
+                 f"{hottest['temperature']:.1f}°C",
+                 hottest["created_at"].strftime("%A")
+    )
+
+          with h2:
+             st.metric(
+            "❄️ Coolest Day",
+             f"{coolest['temperature']:.1f}°C",
+             coolest["created_at"].strftime("%A")
+    )
+
+          with h3:
+             st.metric(
+            "🌫 Best AQI",
+             best_aqi["aqi"],
+             best_aqi["created_at"].strftime("%A")
+    )
+
+          with h4:
+            st.metric(
+             "⚠️ Worst AQI",
+             worst_aqi["aqi"],
+             worst_aqi["created_at"].strftime("%A")
+    )
+
     c1, c2 = st.columns(2)
 
     with c1:
