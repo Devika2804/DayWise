@@ -121,13 +121,7 @@ DB_PASSWORD=your_password
 
 ## 📸 Screenshots
 
-You can add screenshots of:
 
-- Home Page
-- Insights Dashboard
-- About Page
-
-after deployment.
 
 ---
 
