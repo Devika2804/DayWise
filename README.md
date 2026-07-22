@@ -117,14 +117,6 @@ DB_USER=your_username
 DB_PASSWORD=your_password
 ```
 
----
-
-## 📸 Screenshots
-
-
-
----
-
 ## 📄 License
 
 This project is developed for learning and portfolio purposes.
