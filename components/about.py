@@ -22,16 +22,16 @@ outdoor activities, travel, exercise, and daily routines.
         st.subheader("✨ Key Features")
         st.markdown(
             '''
-🌤 Live Weather
-🌫 Air Quality Index (AQI)
-🤖 AI Daily Summary
-🏆 Comfort Score
-🚶 Outdoor Activity Recommendation
-⏰ Best Time to Go Outside
-🍽 Food Suggestion
-❤️ Health Tips
-📈 Historical Trends
-🌍 Compare Citiesn
+-🌤 Live Weather
+-🌫 Air Quality Index (AQI)
+-🤖 AI Daily Summary
+-🏆 Comfort Score
+-🚶 Outdoor Activity Recommendation
+-⏰ Best Time to Go Outside
+-🍽 Food Suggestion
+-❤️ Health Tips
+-📈 Historical Trends
+-🌍 Compare Citiesn
 '''
         )
 
