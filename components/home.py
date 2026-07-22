@@ -27,8 +27,9 @@ def calculate_comfort_score(temp, humidity, aqi):
     return max(score,0)
 
 def render_home(city_name):
-    weather_data = get_weather(city_name)
-    aqi_data = get_aqi(city_name)
+    with st.spinner("Fetching weather data..."):
+         weather_data = get_weather(city_name)
+         aqi_data = get_aqi(city_name)
 
     if not weather_data or not aqi_data:
         st.error("Unable to fetch weather or AQI data.")

@@ -17,7 +17,7 @@ from utils.styles import load_css
 # Page Configuration
 # -----------------------------
 st.set_page_config(
-    page_title="LifePlus",
+    page_title="DayWise",
     page_icon="🌤️",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -31,8 +31,8 @@ load_css()
 # Sidebar
 # -----------------------------
 with st.sidebar:
-    st.title("🌤️ LifePlus")
-    st.caption("AI-powered lifestyle dashboard")
+    st.title("🌤️ DayWise")
+    st.caption("Plan your day with AI-powered weather insights")
 
     st.markdown("")
 
@@ -57,7 +57,7 @@ page = st.segmented_control(
     [
         "🏠 Home",
         "📈 Insights",
-        "ℹ️ About"
+        "💡 About"
     ],
     default="🏠 Home"
 )

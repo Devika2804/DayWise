@@ -4,13 +4,13 @@ import streamlit as st
 
 
 def render_about():
-    st.title("ℹ️ About LifePlus")
+    st.title("💡 About DayWise")
 
     st.markdown(
         '''
-LifePlus is an AI-powered lifestyle dashboard that combines
-live weather, air quality, historical analytics, and AI-powered
-recommendations to help users plan their day.
+DayWise helps users understand today's weather and air quality
+through simple AI-powered insights, making it easier to plan
+outdoor activities, travel, exercise, and daily routines.
 '''
     )
 
@@ -22,16 +22,16 @@ recommendations to help users plan their day.
         st.subheader("✨ Key Features")
         st.markdown(
             '''
-- 🌤 Live Weather
-- 🌫 Live AQI
-- 🧠 AI Daily Brief
-- 🏆 Comfort Score
-- 🚶 Walking Recommendation
-- ⏰ Best Outdoor Time
-- 🍲 Food Suggestion
-- ❤️ Health Tip
-- 📈 Historical Insights
-- 🌍 City Comparison
+🌤 Live Weather
+🌫 Air Quality Index (AQI)
+🤖 AI Daily Summary
+🏆 Comfort Score
+🚶 Outdoor Activity Recommendation
+⏰ Best Time to Go Outside
+🍽 Food Suggestion
+❤️ Health Tips
+📈 Historical Trends
+🌍 Compare Citiesn
 '''
         )
 
@@ -56,14 +56,13 @@ recommendations to help users plan their day.
     st.markdown(
         '''
 1. Select a city.
-2. Weather and AQI are fetched from live APIs.
-3. Gemini AI generates daily recommendations.
-4. Weather history is stored in PostgreSQL.
-5. Insights visualize historical trends and compare cities.
+2. Fetch live weather and AQI data.
+3. Generate AI-powered daily insights.
+4. Store weather history in PostgreSQL.
+5. Explore trends and compare cities.
 '''
     )
 
     st.info(
-        "LifePlus helps users quickly understand today's conditions "
-        "and make informed daily decisions."
-    )
+    "Make smarter everyday decisions with real-time weather, air quality, and AI-powered recommendations."
+)
