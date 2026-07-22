@@ -1,5 +1,4 @@
 
-
 import streamlit as st
 
 
@@ -20,20 +19,19 @@ outdoor activities, travel, exercise, and daily routines.
 
     with col1:
         st.subheader("✨ Key Features")
-        st.markdown(
-            '''
--🌤 Live Weather
--🌫 Air Quality Index (AQI)
--🤖 AI Daily Summary
--🏆 Comfort Score
--🚶 Outdoor Activity Recommendation
--⏰ Best Time to Go Outside
--🍽 Food Suggestion
--❤️ Health Tips
--📈 Historical Trends
--🌍 Compare Citiesn
-'''
-        )
+
+        st.markdown("""
+- 🌤️ Live Weather
+- 🌫️ Air Quality Index (AQI)
+- 🤖 AI Daily Summary
+- 🏆 Comfort Score
+- 🚶 Outdoor Activity Recommendation
+- ⏰ Best Time to Go Outside
+- 🍽️ Food Suggestions
+- ❤️ Health Tips
+- 📈 Historical Trends
+- 🌍 Compare Cities
+""")
 
     with col2:
         st.subheader("🛠 Technology Stack")

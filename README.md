@@ -1,6 +1,6 @@
-# 🌤️ LifePlus
+# 🌤️ DayWise
 
-LifePlus is an AI-powered lifestyle dashboard built with Streamlit. It combines live weather, air quality, historical insights, and AI-generated recommendations to help users plan their day.
+DayWise is an AI-powered lifestyle dashboard built with Streamlit. It combines live weather, air quality, historical insights, and AI-generated recommendations to help users plan their day.
 
 ---
 
