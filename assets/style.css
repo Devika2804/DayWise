@@ -1,0 +1,87 @@
+
+/* =========================
+   LifePlus Global Styles
+   ========================= */
+
+.block-container {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+/* Section headings */
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0 0.75rem 0;
+}
+
+/* Hero card */
+.hero-card {
+    background: #f8fbff;
+    border: 1px solid #dbeafe;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+/* Generic card */
+.card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card h2,
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    line-height: 1.7;
+    color: #374151;
+}
+
+/* Metric card */
+.metric-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 8px 0;
+}
+
+.metric-label {
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    border-right: 1px solid #ececec;
+}
+
+/* Tables */
+[data-testid="stDataFrame"] {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Plotly charts */
+.js-plotly-plot {
+    border-radius: 12px;
+}
+
+/* Footer spacing */
+.footer-space {
+    margin-top: 2rem;
+}
