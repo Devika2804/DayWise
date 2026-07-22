@@ -72,5 +72,5 @@ if page == "🏠 Home":
 elif page == "📈 Insights":
     render_insights(city)
 
-elif page == "ℹ️ About":
+elif page == "💡 About":
     render_about()
