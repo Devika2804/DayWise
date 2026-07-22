@@ -1,8 +1,14 @@
-import requests
 import os
+import requests
+import streamlit as st
 from dotenv import load_dotenv
 
 load_dotenv()
+
+OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
+
+if OPENWEATHER_API_KEY is None:
+    OPENWEATHER_API_KEY = st.secrets["OPENWEATHER_API_KEY"]
 
 
 def get_weather(city_name):
@@ -11,7 +17,7 @@ def get_weather(city_name):
 
     params={
     "q": city_name,
-    "appid":os.getenv("OPENWEATHER_API_KEY"),
+    "appid":OPENWEATHER_API_KEY,
     "units" :"metric"
     }
 

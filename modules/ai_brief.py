@@ -2,12 +2,18 @@ from google import genai
 from datetime import datetime
 import json
 import os
+import streamlit as st
 from dotenv import load_dotenv
 
 load_dotenv()
 
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
+if GEMINI_API_KEY is None:
+    GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+
 client = genai.Client(
-    api_key=os.getenv("GEMINI_API_KEY")
+    api_key=GEMINI_API_KEY
 )
 
 current_hour = datetime.now().hour

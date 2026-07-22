@@ -1,8 +1,14 @@
-import requests
 import os
+import requests
+import streamlit as st
 from dotenv import load_dotenv
 
 load_dotenv()
+
+AQI_API_KEY = os.getenv("AQI_API_KEY")
+
+if AQI_API_KEY is None:
+    AQI_API_KEY = st.secrets["AQI_API_KEY"]
 
 def get_aqi(city_name):
 
@@ -10,7 +16,7 @@ def get_aqi(city_name):
     aqi_url=f"https://api.waqi.info/feed/{city_name}/"
 
     params={
-        "token" : os.getenv("AQI_API_KEY")
+        "token" : AQI_API_KEY
     }
 
     response=requests.get(aqi_url,params=params)
