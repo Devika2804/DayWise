@@ -12,6 +12,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if GEMINI_API_KEY is None:
     GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 
+
 client = genai.Client(
     api_key=GEMINI_API_KEY
 )
@@ -98,9 +99,9 @@ Return ONLY valid JSON.
     try:
 
         response = client.models.generate_content(
-            model="gemini-2.5-flash",
-            contents=prompt
-        )
+           model="gemini-flash-latest",
+           contents=prompt
+)
 
         text = response.text.strip()
 
